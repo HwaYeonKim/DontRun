@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="38.75dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/tab1_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/tab1_uncliced"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/tab1_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/tab2_clicked"
+            android:clickable="true" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="134.25dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
+        android:layout_above="@id/abc"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Alram"
+            android:fontFamily="sans-serif"
+            android:textSize="17.25sp"
+            android:textColor="#4e4e4e"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27.33dp"
+            />
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="64.70dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/today_times_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="#FF5F72"
+                android:text="3"
+                android:textSize="59sp"
+                />
+
+            <TextView
+                android:id="@+id/one"
+                android:fontFamily="sans-serif-thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4e4e4e"
+                android:text="Times"
+                android:layout_toRightOf="@id/today_times_tv"
+                android:layout_alignBaseline="@id/today_times_tv"
+                android:textSize="15sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/between_words_img"
+                android:layout_toRightOf="@id/one"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:id="@+id/today_decibel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:layout_toRightOf="@id/two"
+                android:textColor="#FF5F72"
+                android:text="90"
+                android:textSize="59sp"
+                />
+
+            <TextView
+                android:fontFamily="sans-serif-thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4e4e4e"
+                android:text="dB"
+                android:layout_toRightOf="@id/today_decibel_tv"
+                android:layout_alignBaseline="@id/today_decibel_tv"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="51.25dp"
+            android:layout_marginLeft="43.75dp"
+            android:layout_marginRight="43.75dp"
+            android:background="#ffffff"
+            android:scrollbarThumbVertical="@android:color/white"
+            android:divider="#dde0e5"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

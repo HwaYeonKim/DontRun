@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="272.50dp"
+    android:layout_height="69dp"
+    android:gravity="bottom|center_horizontal"
+    android:background="@drawable/item_bg"
+    >
+
+    <TextView
+        android:id="@+id/item_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="June.10_17:15"
+        android:textSize="14.76sp"
+        android:fontFamily="sans-serif-light"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_decibel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"
+            android:textSize="12.24sp"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dB"
+            android:textSize="10.36sp"
+            android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+
+</LinearLayout>

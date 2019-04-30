@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2560">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="187"
+            android:background="#FF5F72"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:text="Today"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="(June 10, 2015)"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="295"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="User Profile"
+                android:textColor="#bcbec0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="정보를 입력하시면 보다 정확하게 측정됩니다."
+                android:textColor="#bcbec0"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="91"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="996"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:weightSum="4">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginBottom="13.25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:fontFamily="sans-serif"
+                    android:textSize="23sp"
+                    android:textColor="#6d6e71"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/height_ed"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:textColor="#343b57"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#bcbec0"
+                        android:text = "cm"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginBottom="13.25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:fontFamily="sans-serif"
+                    android:textSize="23sp"
+                    android:textColor="#6d6e71"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/weight_ed"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:textColor="#343b57"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#bcbec0"
+                        android:text = "kg"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginBottom="13.25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:fontFamily="sans-serif"
+                    android:textSize="23sp"
+                    android:textColor="#6d6e71"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/age_ed"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:textColor="#343b57"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text = "cm"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginBottom="13.25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:fontFamily="sans-serif"
+                    android:textSize="23sp"
+                    android:textColor="#6d6e71"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/gender_toggle"
+                        android:layout_width="74.75dp"
+                        android:layout_height="23.50dp"
+                        android:background="@drawable/men"
+                        android:clickable="true"/>
+
+                 <!--   <EditText
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:textColor="#343b57"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:text = "cm"
+                        />-->
+                </LinearLayout>
+
+
+  <!--              <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="459"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="36"
+                        android:layout_marginRight="9.75dp"
+                        android:background="@drawable/wemen_icon"/>
+
+                    <ImageView
+                        android:id="@+id/gender_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="299"
+                        android:layout_marginRight="9.75dp"
+                        android:background="@drawable/wemen_toggle"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="36"
+                        android:background="@drawable/men_icon"/>
+
+                </LinearLayout>-->
+
+            </TableRow>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="532"/>
+
+            <ImageView
+                android:id="@+id/start_btn"
+                android:layout_width="match_parent"
+                android:layout_height="43.75dp"
+                android:background="@drawable/start_btn"
+                android:layout_weight="175"
+                android:clickable="true"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="188"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
